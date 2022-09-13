@@ -1,3 +1,9 @@
 #!/bin/bash
-ABS_DIRECTORY="$(dirname "${ABS_SCRIPT_PATH}")"
-echo ${ABS_SCRIPT_PATH}"
+ 
+echo $0
+ 
+full_path=$(realpath $0)
+echo $full_path
+ 
+dir_path=$(dirname $full_path)
+echo $dir_path
